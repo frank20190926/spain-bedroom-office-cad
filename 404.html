@@ -1,0 +1,8 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Dormitorio 3 / File archive</title><style>body{max-width:640px;margin:12vh auto;padding:24px;font:18px/1.6 sans-serif;color:#25231f;background:#f6f4ef}a{color:inherit}</style><h1>Drawing archive</h1><p id="message">This address is not in the current drawing set.</p><p><a id="destination" href="./">Open the A / B drawing archive</a></p><script>
+const suffix='/exports/Bedroom_Office_10.54sqm_3D.blend';
+if(location.pathname.endsWith(suffix)){
+ const base=location.pathname.slice(0,-suffix.length);
+ document.getElementById('message').textContent='The archived REV.05C Blender scene is included in the original master pack, under model/Bedroom_Office_Dormitorio3.blend.';
+ const link=document.getElementById('destination');link.href=base+'/exports/Bedroom_Office_10.54sqm_Master_Pack.zip';link.textContent='Download the original master pack (.zip)';
+}
+</script></html>

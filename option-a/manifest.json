@@ -1,0 +1,48 @@
+{
+  "option": "a",
+  "revision": "REV.06A",
+  "files": {
+    "deliverables/BD01.jpg": {
+      "bytes": 1414363,
+      "sha256": "ad12d03b6be9ad53f1fe970b42d45286b01829b6ba0eb54d402bb64fedb6729e"
+    },
+    "deliverables/BD01_1200.jpg": {
+      "bytes": 111627,
+      "sha256": "c05cde1ed91bea1399b60a0c902bd75d37bb7e00c5c96253e917a803b7591bae"
+    },
+    "deliverables/BD02.jpg": {
+      "bytes": 978762,
+      "sha256": "6d018ec42a1b2b421e22e3e340c011653b7caed92bb598ae616dfbe2657c73c3"
+    },
+    "deliverables/BD02_1200.jpg": {
+      "bytes": 141166,
+      "sha256": "2281fed0fdbd96cfb958dc434738d788286fc6cdcf182e3e4be7021e6d87cae7"
+    },
+    "deliverables/BD03.jpg": {
+      "bytes": 904024,
+      "sha256": "be4e4029833eee4265b6a53ea168f2048d992e2ae4ee6f7d75555f2a095e6963"
+    },
+    "deliverables/BD03_1200.jpg": {
+      "bytes": 122048,
+      "sha256": "8e5ef93b55b9d8617f0ffd1407df4c2c0d6b1e0d5385c2fe5107e4e61f953ee8"
+    },
+    "deliverables/BD04.jpg": {
+      "bytes": 1077909,
+      "sha256": "b22988177b8e94371cef7cabee9bac8a46c5d776dc380c3b75859328798ccf68"
+    },
+    "deliverables/BD04_1200.jpg": {
+      "bytes": 135853,
+      "sha256": "4fa96d669437ad387b6ca33385c56e84024771bbc714acd005866fdbb07880ef"
+    },
+    "exports/Bedroom_Office_10.54sqm_OptionA_Carpenter_A3.pdf": {
+      "bytes": 10886957,
+      "sha256": "e83b782f3606ffa30a53957d217298b678621c0fe4410315f6116cef133343a9"
+    },
+    "exports/Bedroom_Office_10.54sqm_OptionA_Master_Pack.zip": {
+      "bytes": 31381101,
+      "sha256": "5a16ae09b4f1481899fd001b92733a801e38d083df14a71220a1e8b73e6c4a08"
+    }
+  },
+  "pdf": "#award-handover-only",
+  "zip": "#award-handover-only"
+}

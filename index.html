@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dormitorio 3 — Two ways to inhabit 10.54 m²</title>
+<meta name="description" content="Compare Option A overhead bridges and Option B Z900 storage platform. REV.06A / REV.06B architectural sheets, four-page A3 carpenter PDFs and CAD / Blender master packs.">
+<style>
+@font-face{font-family:Space;src:url(assets/fonts/SpaceGrotesk-600.ttf);font-weight:600;font-display:swap}
+@font-face{font-family:Plex;src:url(assets/fonts/IBMPlexSans-400.ttf);font-weight:400;font-display:swap}
+@font-face{font-family:Plex;src:url(assets/fonts/IBMPlexSans-600.ttf);font-weight:600;font-display:swap}
+@font-face{font-family:Mono;src:url(assets/fonts/JetBrainsMono-400.ttf);font-display:swap}
+:root{--paper:#f6f4ef;--ink:#25231f;--muted:#57524a;--line:#c5bfb4;--wash:#eae6dd}
+*{box-sizing:border-box}html{background:var(--paper);color:var(--ink);font:17px/1.5 Plex,sans-serif;-webkit-text-size-adjust:100%}body{margin:0 auto;max-width:1560px;padding:0 clamp(20px,4vw,64px)}a{color:inherit;text-underline-offset:4px}button{font:inherit;color:inherit;cursor:pointer}a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset:5px}a:hover{color:#716044}button:hover{background:var(--wash)}button:active{background:#ded8cc}h1,h2,h3,p,figure{margin:0}h1,h2,h3{font-family:Space,sans-serif;font-weight:600;letter-spacing:-.025em;line-height:1.12;text-wrap:balance}.eyebrow,.mono{font-family:Mono,monospace;font-variant-numeric:tabular-nums}.eyebrow{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}.skip{position:absolute;top:-80px}.skip:focus{top:8px;background:var(--paper);padding:8px;z-index:2}
+.masthead{padding:28px 0 20px;display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid var(--ink)}.masthead a{text-decoration:none}.intro{display:grid;grid-template-columns:1.5fr 1fr;align-items:end;gap:40px;padding:36px 0}h1{font-size:clamp(36px,4.7vw,68px)}.intro p{color:var(--muted);max-width:42ch}.intro .eyebrow{margin-bottom:16px}.switcher{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}.switcher a{padding:20px 24px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;gap:16px}.switcher a+a{border-left:1px solid var(--line)}.switcher a[aria-current=true]{background:var(--wash)}.switcher strong{font:600 24px Space,sans-serif}.switcher small{display:block;color:var(--muted);font-size:14px;margin-top:4px}.switcher .mark{font-family:Mono,monospace}.switcher a[aria-current=true] .mark::before{content:'● '}.switcher a:hover{background:#e2ddd2;color:var(--ink)}
+.overview{display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:32px 0 64px}.overview article{min-width:0}.image-link{display:block;cursor:zoom-in}.image-link img{display:block;width:100%;height:auto;background:white}.overview .caption{display:flex;justify-content:space-between;gap:16px;margin:16px 0 12px}.overview h2{font-size:26px}.overview .volume{font:600 28px Space,sans-serif;white-space:nowrap}.overview p{color:var(--muted);font-size:16px}.overview .metric{padding-top:8px;font-size:12px}.overview .detail{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;display:flex;flex-wrap:wrap;gap:12px 24px;font-size:14px}.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding-bottom:16px;border-bottom:1px solid var(--ink);margin-bottom:24px}.section-head h2{font-size:clamp(28px,3vw,40px)}.selected-description{max-width:76ch;color:var(--muted);margin-bottom:28px}.sheets{display:grid;grid-template-columns:1fr 1fr;gap:36px 32px}.sheets img{display:block;width:100%;height:auto}.sheets figcaption{padding-top:12px;display:flex;gap:16px;font-size:14px;color:var(--muted)}.sheets figcaption b{color:var(--ink);font-weight:400;white-space:nowrap}.files{padding-top:64px}.download{display:grid;grid-template-columns:1fr 1fr auto;align-items:baseline;gap:24px;border-bottom:1px solid var(--line);padding:24px 0}.download a{font:600 24px Space,sans-serif}.download p{font-size:15px;color:var(--muted)}.download .mono{font-size:13px}.note{font-size:14px;color:var(--muted);max-width:86ch;margin-top:24px}footer{border-top:1px solid var(--ink);margin-top:64px;padding:24px 0 40px;display:flex;justify-content:space-between;gap:24px;font-size:13px;color:var(--muted)}
+dialog{padding:0;border:0;background:var(--paper);color:var(--ink);width:100vw;height:100dvh;max-width:none;max-height:none}dialog::backdrop{background:var(--paper)}.viewer{height:100%;display:grid;grid-template-rows:auto minmax(0,1fr)}.viewer nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding:12px 24px;border-bottom:1px solid var(--line);font-size:14px}.viewer .controls{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center}.viewer button{background:none;border:0;padding:8px 0;min-height:44px}.viewer button:hover{text-decoration:underline}.view{overflow:auto;padding:16px;display:flex;align-items:flex-start;justify-content:flex-start}.view img{display:block;max-width:100%;max-height:100%;object-fit:contain;margin:auto}.view.zoom img{max-width:none;max-height:none;margin:0}#viewer-title{font-size:13px}.nojs{padding:24px;border-bottom:1px solid var(--line)}
+@media(max-width:760px){.masthead{font-size:11px;flex-wrap:wrap}.intro{grid-template-columns:1fr;gap:20px;padding:28px 0}.intro p{max-width:none}.switcher a{padding:16px 12px;display:block}.switcher strong{font-size:21px}.switcher .mark{display:block;margin-top:12px;font-size:11px}.overview{gap:32px;grid-template-columns:1fr;padding-bottom:48px}.overview .caption{margin-top:12px}.sheets{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column;gap:12px}.download{grid-template-columns:1fr auto;gap:12px}.download p{grid-column:1/-1;grid-row:2}.download a{font-size:21px}.files{padding-top:48px}footer{flex-direction:column;gap:8px}.viewer nav{padding:8px 16px}.viewer .controls{gap:8px 16px;font-size:13px}}
+@media print{.switcher,.viewer,.skip{display:none}.overview,.sheets{grid-template-columns:1fr 1fr}body{padding:0}.overview article,figure{break-inside:avoid}a{text-decoration:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#drawing-set">Skip to drawings</a>
+<header class="masthead eyebrow"><a href="?opt=a">Dormitorio 3 / Coastal Japandi</a><span>Spain · 10.54 m² · Design alternatives</span></header>
+<main>
+<div class="intro"><div><p class="eyebrow">Bedroom / Office / Spin studio</p><h1>One room.<br>Two ways to live.</h1></div><p>A standard-height bed beneath continuous overhead storage, or a raised platform with a walk-in luggage vault. Compare both approaches, then explore the complete drawing set.</p></div>
+<nav class="switcher" aria-label="Select design option">
+<a href="?opt=a" data-option="a" aria-current="true"><span><strong>Option A</strong><small>Perimeter bridges</small></span><span class="mark eyebrow">REV.06A</span></a>
+<a href="?opt=b" data-option="b" aria-current="false"><span><strong>Option B</strong><small>Walk-up platform</small></span><span class="mark eyebrow">REV.06B</span></a>
+</nav>
+<section class="overview" aria-label="Side-by-side design overview">
+<article>
+<a class="image-link" href="option-a/deliverables/BD01.jpg" data-view="a" data-sheet="0" aria-label="Enlarge Option A concept sheet"><img src="option-a/deliverables/BD01_1200.jpg" width="1200" height="900" alt="Option A: standard-height bed, continuous overhead cabinets and drawer tower"></a>
+<div class="caption"><h2>A / Perimeter bridges</h2><span class="volume">3.19 m³</span></div>
+<p>Standard Bed Height + Continuous Perimeter Overhead Bridges &amp; Drawer Tower</p><p class="metric eyebrow">REV.06A · Net New Joinery</p>
+<div class="detail"><a href="?opt=a#drawing-set" data-option="a">Explore four sheets ↗</a><span class="mono" style="opacity:0.75;padding:4px 8px;">CAD/PDF Unlocked on Contest Award</span><span class="mono" style="opacity:0.75;padding:4px 8px;">CAD/PDF Unlocked on Contest Award</span></div>
+</article>
+<article>
+<a class="image-link" href="option-b/deliverables/BD01.jpg" data-view="b" data-sheet="0" aria-label="Enlarge Option B concept sheet"><img src="option-b/deliverables/BD01_1200.jpg" width="1200" height="900" alt="Option B: elevated storage platform, walk-in luggage vault and stair drawers"></a>
+<div class="caption"><h2>B / Walk-up platform</h2><span class="volume">3.13 m³</span></div>
+<p>Z900 Walk-Up Storage Platform + Walk-In 28&quot; Luggage Vault &amp; Stair Drawers</p><p class="metric eyebrow">REV.06B · Net New Joinery · 60% Ground-Level Reach</p>
+<div class="detail"><a href="?opt=b#drawing-set" data-option="b">Explore four sheets ↗</a><span class="mono" style="opacity:0.75;padding:4px 8px;">CAD/PDF Unlocked on Contest Award</span><span class="mono" style="opacity:0.75;padding:4px 8px;">CAD/PDF Unlocked on Contest Award</span></div>
+</article>
+</section>
+<noscript><p class="nojs">Both options’ PDFs and master packs are available above. <a href="option-b/deliverables/BD01.jpg">B / BD-01</a> · <a href="option-b/deliverables/BD02.jpg">BD-02</a> · <a href="option-b/deliverables/BD03.jpg">BD-03</a> · <a href="option-b/deliverables/BD04.jpg">BD-04</a>. Enable JavaScript to switch the gallery and use the full-screen viewer.</p></noscript>
+<section id="drawing-set" aria-labelledby="set-title">
+<div class="section-head"><h2 id="set-title" aria-live="polite">Option A / Drawing set</h2><span class="eyebrow" id="set-meta">REV.06A · 3200 × 2400 px</span></div>
+<p class="selected-description" id="set-description">Standard Bed Height + Continuous Perimeter Overhead Bridges &amp; Drawer Tower. 3.19 m³ Net New Joinery.</p>
+<div class="sheets" id="sheets">
+<figure><a class="image-link" href="option-a/deliverables/BD01.jpg" data-view="a" data-sheet="0"><img src="option-a/deliverables/BD01_1200.jpg" loading="lazy" width="1200" height="900" alt="Option A, BD-01: Interior and storage concept"></a><figcaption><b class="mono">BD-01</b><span>Interior &amp; storage concept</span></figcaption></figure>
+<figure><a class="image-link" href="option-a/deliverables/BD02.jpg" data-view="a" data-sheet="1"><img src="option-a/deliverables/BD02_1200.jpg" loading="lazy" width="1200" height="900" alt="Option A, BD-02: Carpenter plan and axonometric"></a><figcaption><b class="mono">BD-02</b><span>Carpenter plan &amp; axonometric</span></figcaption></figure>
+<figure><a class="image-link" href="option-a/deliverables/BD03.jpg" data-view="a" data-sheet="2"><img src="option-a/deliverables/BD03_1200.jpg" loading="lazy" width="1200" height="900" alt="Option A, BD-03: Elevations, sections and specifications"></a><figcaption><b class="mono">BD-03</b><span>Elevations, sections &amp; specifications</span></figcaption></figure>
+<figure><a class="image-link" href="option-a/deliverables/BD04.jpg" data-view="a" data-sheet="3"><img src="option-a/deliverables/BD04_1200.jpg" loading="lazy" width="1200" height="900" alt="Option A, BD-04: Geometry proof and handover pack"></a><figcaption><b class="mono">BD-04</b><span>Geometry proof &amp; handover pack</span></figcaption></figure>
+</div>
+</section>
+<section class="files" id="files" aria-labelledby="files-title"><div class="section-head"><h2 id="files-title">Option A / Downloads</h2><span class="eyebrow">Carpenter &amp; source files</span></div>
+<div class="download"><a id="pdf-link" href="option-a/exports/Bedroom_Office_10.54sqm_OptionA_Carpenter_A3.pdf" href="#drawing-set" onclick="alert('Full A3 PDF & Native .DWG/.DXF/.BLEND Carpenter Files are delivered via official Freelancer Contest Handover upon award.');return false;">Carpenter sheet set (Unlocked on Award)</a><p>BD-01 to BD-04 · Four A3 pages, landscape.</p><span class="mono">PDF / A3</span></div>
+<div class="download"><a id="zip-link" href="option-a/exports/Bedroom_Office_10.54sqm_OptionA_Master_Pack.zip" href="#drawing-set" onclick="alert('Full A3 PDF & Native .DWG/.DXF/.BLEND Carpenter Files are delivered via official Freelancer Contest Handover upon award.');return false;">Complete master pack (Unlocked on Award)</a><p>Full-resolution sheets, A3 PDF, DWG, DXF, Blender scene and supporting handover files.</p><span class="mono">ZIP / CAD + 3D</span></div>
+<p class="note">Net new joinery excludes the existing wardrobe. Confirm site dimensions, hardware load ratings and wall fixings before fabrication.</p>
+</section>
+</main>
+<footer><span>Dormitorio 3 · Architectural drawing archive</span><span class="mono">REV.06A / REV.06B</span></footer>
+<dialog id="viewer" aria-labelledby="viewer-title"><div class="viewer"><nav><span class="mono" id="viewer-title">Drawing viewer</span><div class="controls"><button id="previous" aria-label="Previous sheet">← Previous</button><button id="next" aria-label="Next sheet">Next →</button><button id="zoom" aria-pressed="false">View 100%</button><a id="original" target="_blank" rel="noopener">Open original ↗</a><button id="close" autofocus>Close ×</button></div></nav><div class="view" id="image-view"><img id="full-image" alt=""></div></div></dialog>
+<script>
+(() => {
+ const $ = id => document.getElementById(id);
+ const labels = ['Interior & storage concept','Carpenter plan & axonometric','Elevations, sections & specifications','Geometry proof & handover pack'];
+ const descriptions = {a:'Standard Bed Height + Continuous Perimeter Overhead Bridges & Drawer Tower. 3.19 m³ Net New Joinery.',b:'Z900 Walk-Up Storage Platform + Walk-In 28" Luggage Vault & Stair Drawers. 3.13 m³ Net New Joinery · 60% Ground-Level Reach.'};
+ const sheetPath = (option, index, preview = false) => `option-${option}/deliverables/BD0${index + 1}${preview ? '_1200' : ''}.jpg`;
+ const fromURL = () => new URL(location.href).searchParams.get('opt')?.toLowerCase() === 'b' ? 'b' : 'a';
+ function select(option) {
+  const letter = option.toUpperCase();
+  document.querySelectorAll('.switcher [data-option]').forEach(a => a.setAttribute('aria-current', String(a.dataset.option === option)));
+  $('set-title').textContent = `Option ${letter} / Drawing set`;
+  $('set-meta').textContent = `REV.06${letter} · 3200 × 2400 px`;
+  $('set-description').textContent = descriptions[option];
+  $('files-title').textContent = `Option ${letter} / Downloads`;
+  document.title = `Dormitorio 3 — Option ${letter} · REV.06${letter}`;
+  document.querySelectorAll('#sheets a').forEach((a,i) => {
+   a.href = sheetPath(option,i); a.dataset.view = option;
+   const img = a.querySelector('img'); img.src = sheetPath(option,i,true); img.alt = `Option ${letter}, BD-0${i+1}: ${labels[i]}`;
+  });
+  const base = `option-${option}/exports/Bedroom_Office_10.54sqm_Option${letter}`;
+  $('pdf-link').href = '#drawing-set'; $('zip-link').href = '#drawing-set';
+ }
+ document.querySelectorAll('[data-option]').forEach(a => a.addEventListener('click',e => {
+  if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+  e.preventDefault(); const url = new URL(location.href); url.searchParams.set('opt',a.dataset.option);
+  url.hash = a.hash; history.pushState(null,'',url); select(a.dataset.option);
+  if (a.hash) $('drawing-set').scrollIntoView();
+ }));
+ window.addEventListener('popstate',() => select(fromURL())); select(fromURL());
+ const viewer = $('viewer'); let viewedOption='a', index=0, opener;
+ function show(n) {
+  index = (n+4)%4; $('image-view').classList.remove('zoom'); $('image-view').scrollTo(0,0);
+  $('zoom').setAttribute('aria-pressed','false'); $('zoom').textContent='View 100%';
+  $('full-image').src=sheetPath(viewedOption,index); $('full-image').alt=`Option ${viewedOption.toUpperCase()}, BD-0${index+1}: ${labels[index]}`;
+  $('original').href=sheetPath(viewedOption,index); $('viewer-title').textContent=`Option ${viewedOption.toUpperCase()} / BD-0${index+1} / 04`;
+ }
+ document.addEventListener('click',e => {
+  const a=e.target.closest('a[data-view]'); if(!a || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+  e.preventDefault(); opener=a; viewedOption=a.dataset.view; show(Number(a.dataset.sheet)); viewer.showModal(); document.body.style.overflow='hidden';
+ });
+ $('close').onclick=()=>viewer.close();
+ viewer.addEventListener('close',()=>{document.body.style.overflow='';opener?.focus({preventScroll:true});});
+ $('previous').onclick=()=>show(index-1); $('next').onclick=()=>show(index+1);
+ $('zoom').onclick=()=>{const full=$('image-view').classList.toggle('zoom');$('zoom').setAttribute('aria-pressed',String(full));$('zoom').textContent=full?'Fit to screen':'View 100%';};
+ viewer.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'){e.preventDefault();show(index-1);}if(e.key==='ArrowRight'){e.preventDefault();show(index+1);}});
+})();
+</script>
+</body>
+</html>
